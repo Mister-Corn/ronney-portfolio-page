@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon";
+import logo from "../assets/icon.svg";
+---
+
+<header class="sticky top-0 z-10 flex flex-row items-center">
+  <a href="/">
+    <img src={logo} alt="Mister-Corn!" />
+  </a>
+  <div class="flex flex-row flex-nowrap justify-between w-full">
+    <div>
+      <span>Ronald Libago</span>
+      <a href="/" class="hidden md:inline">/me</a>
+      <a href="#projects" class="hidden md:inline">/projects</a>
+    </div>
+    <div class="flex flex-row gap-3">
+      <a
+        href="https://www.github.com/mister-corn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="mdi:github" class="w-6" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ronald-libago"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon pack="mdi" name="linkedin" class="w-6" />
+      </a>
+    </div>
+  </div>
+</header>
