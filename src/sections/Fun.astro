@@ -1,0 +1,23 @@
+<div class="container-fun">
+  <div class="triangle"></div>
+</div>
+
+<style>
+  .container-fun {
+    position: relative;
+    height: 24rem;
+    @apply bg-cyan-200;
+  }
+
+  .triangle {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    max-width: 24rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    @apply bg-sky-300;
+  }
+</style>
